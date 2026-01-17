@@ -1,0 +1,10 @@
+name: "Template Mix Tape YML"
+description: "This is a template mix of all your favourite hits!"
+route: "template"
+method: "POST"
+generate_keys: true
+action: "echo"
+accept_input: false
+data_field: "data"
+output_write: true  # Set to true to write results to a file
+output_file: "template.log"  # The filename to write results to

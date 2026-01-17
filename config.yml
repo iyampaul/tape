@@ -1,0 +1,23 @@
+hostname: "buttons"
+listen_port: 443
+tls_enabled: true
+tls_certificate: "secret.crt"
+tls_key: "secret.key"
+actions_path: "actions/"
+log_enabled: true
+log_path: "logs/"
+file_store: "files/"
+
+# Core actions configuration
+core_actions:
+  log:
+    enabled: true
+    method: POST
+    keygen: true
+    input: false
+    data: ""
+    output_write: false
+    output_file: ""
+    route: /log
+    description: "Write incoming request to event log."
+    #state: active

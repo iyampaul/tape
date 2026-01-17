@@ -1,0 +1,10 @@
+name: "whoami"
+description: "whoami"
+route: "whoami"
+method: POST
+generate_keys: false
+action: "/usr/bin/whoami"
+accept_input: false
+data_field: ""
+output_write: false  # Set to true to write results to a file
+output_file: "whoami.log"  # The filename to write results to

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  tape:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tape
+    ports:
+      - "8080:443"
+    volumes:
+      - ./config.yml:/app/config.yml:ro
+      - ./secret.crt:/app/secret.crt:ro
+      - ./secret.key:/app/secret.key:ro
+      - ./actions:/app/actions:ro
+      - ./logs:/app/logs
+      - ./files:/app/files
+    environment:
+      - TAPE_CONFIG=/app/config.yml
+    restart: unless-stopped

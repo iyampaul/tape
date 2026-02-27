@@ -1,5 +1,7 @@
 # Tape: Tiny Action Processing Engine
 
+Tape is a lightweight, modular action processing engine designed for easy integration and automation. It allows users to define, configure, and execute custom or core actions via HTTP endpoints, supporting authentication, logging, and flexible input/output handling. Tape is ideal for orchestrating scripts, managing workflows, and securely exposing system operations in both local and containerized environments.
+
 ## Setup
 
 1. **Clone the repository**
